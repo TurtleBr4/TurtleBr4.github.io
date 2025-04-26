@@ -1,0 +1,131 @@
+/* Reset + basics */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Ubuntu', monospace;
+    background: #353535;
+    scroll-behavior: smooth;
+  }
+  h1 {
+    font-size: 3rem; /* Big headline */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Section titles */
+  }
+  
+  p {
+    font-size: 1.2rem; /* Regular paragraph text */
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: url('galactic.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.171);
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .scroll-down {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+  
+  /* Panels */
+  .panel {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease, transform 1s ease;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgb(24, 23, 23);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Reveal class */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #b6b6b6;
+    color: #000000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  #projects h2 {
+    margin-bottom: 30px; /* Tiny buffer after the title */
+  }
+  
+  
+  .project p {
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  

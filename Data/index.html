@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zaid Goodman || Turtle_</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Zaid Goodman</h1>
+      <p>Game Development</p>
+      <a href="#about" class="scroll-down">↓</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="panel">
+    <h2>About Me</h2>
+    <p>This is a little bit about me...</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="panel">
+    <h2>Projects</h2>
+    <div class="project-list">
+  
+      <div class="project">
+        <img src="robotgame3.png" alt="Screenshot of Project One">
+        <h3>Project One</h3>
+        <p>Short description of what it does.</p>
+        <a href="https://turtle-bro.itch.io/appextent3">View Project</a>
+      </div>
+  
+      <div class="project">
+        <img src="roboreturn.png" alt="Screenshot of Project Two">
+        <h3>Project Two</h3>
+        <p>Another description of a thing you built.</p>
+        <a href="https://turtle-bro.itch.io/cgdd201423">View Project</a>
+      </div>
+
+      <div class="project">
+        <img src="project1.jpg" alt="Screenshot of Project Three">
+        <h3>Project Three</h3>
+        <p>Short description of what it does.</p>
+        <a href="#">View Project</a>
+      </div>
+  
+      <div class="project">
+        <img src="project2.jpg" alt="Screenshot of Project Four">
+        <h3>Project Four</h3>
+        <p>Another description of a thing you built.</p>
+        <a href="#">View Project</a>
+      </div>
+  
+      <!-- Add more projects as needed -->
+  
+    </div>
+  </section>
+  
+  
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="panel">
+    <h2>Gallery</h2>
+    <p>Here are some things I've worked on...</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="panel">
+    <h2>Contact</h2>
+    <p>zaidisagoodman@gmail.com</p>
+    <p>
+        <a href="https://github.com/TurtleBr4">GitHub</a> |
+        <a href="https://www.linkedin.com/in/zaid-goodman-819262222/">LinkedIn</a>
+        <a href= "https://turtle-bro.itch.io/">Itch.io</a>
+      </p>
+  </section>
+
+  <script>
+    // Fade in panels when they enter view
+    const panels = document.querySelectorAll('.panel');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    panels.forEach(panel => {
+      observer.observe(panel);
+    });
+  </script>
+</body>
+</html>
