@@ -1,123 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zaid Goodman || Turtle_</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zaid Goodman — game development, programming, and art.">
+  <meta name="theme-color" content="#080b18">
+  <title>Zaid Goodman | Game Development</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-star">✳</span> TURTLE<span class="brand-dim">.DEV</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#projects">EXPLORE WORK <span>↘</span></a>
+  </header>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="hero-text">
-      <h1>Zaid Goodman</h1>
-      <p>Game Development | Programming | Art</p>
-      <a href="#about" class="scroll-down">↓</a>
-    </div>
-  </div>
-
-<!-- About Section -->
-<section id="about" class="panel">
-  <h2>About Me</h2>
-  <div class="about-content">
-    <div class="about-text">
-      <p>I'm an Atlanta-based developer specializing in game development. I focus on programming gameplay systems, building tools, and creating interactive experiences. I'm also experienced with general software development with languages like C# and Java and occasionally contribute art to my projects.</p>
-    </div>
-    <div class="about-photo">
-      <img src="me_temp_getaprophotoshootpleaseohgod.jpg" alt="Photo of Zaid Goodman">
-    </div>
-  </div>
-</section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="panel">
-    <h2>Projects</h2>
-    <div class="project-list">
-  
-      <div class="project">
-        <img src="robotgame3.png" alt="Screenshot of Project One">
-        <h3>Robot Game.3</h3>
-        <p>Move, fight, and explore through ruins in this top down action game!</p>
-        <a href="https://turtle-bro.itch.io/appextent3">View Project</a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-scrim"></div><div class="stars stars-a"></div><div class="stars stars-b"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> GAME DEVELOPMENT / PROGRAMMING / ART</p>
+        <h1>Zaid<br><span>Goodman</span></h1>
+        <p class="hero-subtitle">I build interactive worlds, gameplay systems, and tools that make ideas playable.</p>
+        <div class="hero-buttons"><a class="button button-bright" href="#projects">VIEW PROJECTS <span>↓</span></a><a class="button button-ghost" href="#about">ABOUT ME <span>↗</span></a></div>
       </div>
-  
-      <div class="project">
-        <img src="roboreturn.png" alt="Screenshot of Project Two">
-        <h3>Robo Return</h3>
-        <p>Blast your way through the horde and aim for the highest score in this 3rd person adventure!</p>
-        <a href="https://turtle-bro.itch.io/cgdd201423">View Project</a>
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-planet"></div>
+      <div class="hero-caption"><span>ATLANTA, GEORGIA</span><span>INDEPENDENT CREATOR <b>✦</b></span></div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About">↓</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-kicker"><span>01</span> / ABOUT ME</div>
+      <div class="about-layout">
+        <div class="about-copy">
+          <h2>Curious by nature.<br><span>Developer by design.</span></h2>
+          <p>I'm an Atlanta-based developer specializing in game development. I focus on programming gameplay systems, building tools, and creating interactive experiences. I'm also experienced with general software development with languages like C# and Java and occasionally contribute art to my projects.</p>
+          <div class="skill-chips"><span>UNITY</span><span>C#</span><span>JAVA</span><span>GAMEPLAY SYSTEMS</span><span>TOOLS</span><span>3D & 2D ART</span></div>
+        </div>
+        <div class="portrait-wrap"><div class="portrait-frame"><img src="me_temp_getaprophotoshootpleaseohgod.jpg" alt="Photo of Zaid Goodman" loading="lazy"></div><span class="portrait-stamp">PLAYER 01<br>DEVELOPER</span></div>
       </div>
+    </section>
 
-      <div class="project">
-        <img src="CropCoverArt.png" alt="Screenshot of Project Three">
-        <h3>Labyrinth</h3>
-        <p>Navigate through the labyrinth, collect the golden eggs, and escape with great riches!</p>
-        <a href="https://turtle-bro.itch.io/labyr">View Project</a>
-      </div>
-  
-      <div class="project">
-        <img src="" alt="">
-        <h3>And more coming soon!</h3>
-        <p></p>
-        <a href="#"></a>
-      </div>
-  
+    <section class="section projects-section" id="projects">
+      <div class="section-kicker"><span>02</span> / SELECTED PROJECTS</div>
+      <div class="section-heading"><h2>Made to be <span>played.</span></h2><p>Games and experiments I've helped bring to life. Choose a project to learn more or launch a browser build when available.</p></div>
+      <div id="project-list" class="project-list" aria-live="polite"><p class="loading-message">Loading projects from the archive…</p></div>
+      <p class="project-edit-note"><span>✳</span> New project? Add one object to <code>projects.json</code>. The cards update automatically.</p>
+    </section>
 
-  
-    </div>
-  </section>
-  
-  
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="panel">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="square!.png" alt="Gallery Image 1">
-      </div>
-      <div class="gallery-item">
-        <img src="pfp.png" alt="Gallery Image 2">
-      </div>
-      <div class="gallery-item">
-        <img src="IMG_0178.png" alt="Gallery Image 3">
-      </div>
-      <div class="gallery-item">
-        <img src="IMG_0184.png" alt="Gallery Image 3">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="panel">
-    <h2>Contact</h2>
-    <p>zaidisagoodman@gmail.com</p>
-    <p>
-        <a href="https://github.com/TurtleBr4">GitHub</a> |
-        <a href="https://www.linkedin.com/in/zaid-goodman-819262222/">LinkedIn</a> |
-        <a href= "https://turtle-bro.itch.io/">Itch.io</a>
-      </p>
-  </section>
-
-  <script>
-    // Fade in panels when they enter view
-    const panels = document.querySelectorAll('.panel');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    panels.forEach(panel => {
-      observer.observe(panel);
-    });
-  </script>
+    <section class="contact-section" id="contact">
+      <div class="contact-stars"></div>
+      <div class="section-kicker"><span>03</span> / CONTACT</div>
+      <div class="contact-content"><div><p class="eyebrow">LET'S BUILD SOMETHING</p><h2>Have an idea?<br><span>Let's make it real.</span></h2></div><a class="button button-bright" href="mailto:zaidisagoodman@gmail.com">GET IN TOUCH ↗</a></div>
+      <div class="contact-links"><a href="https://github.com/TurtleBr4" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/zaid-goodman-819262222/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://turtle-bro.itch.io/" target="_blank" rel="noopener noreferrer">ITCH.IO ↗</a><span>ZAIDISAGOODMAN@GMAIL.COM</span></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-star">✳</span> TURTLE<span class="brand-dim">.DEV</span></a><span>BUILT WITH CURIOSITY <b>✦</b> <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="app.js"></script>
 </body>
 </html>
