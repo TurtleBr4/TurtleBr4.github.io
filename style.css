@@ -80,6 +80,8 @@ footer,
 .quiet {
     color: var(--muted);
     font-size: 13px;
+    align-items: center;
+
 }
 
 /* Intro */
