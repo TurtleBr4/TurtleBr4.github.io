@@ -10,7 +10,7 @@
     "title": "Robot Game.3",
     "type": "Unity \u00b7 C#",
     "description": "A top-down 3D game set in a ruined city, where a robot explores and fights hostile machines.",
-    "image": "robotgame3.png",
+    "image": "data/r3.png",
     "imageAlt": "Robot Game.3 gameplay screenshot",
     "playUrl": "https://turtle-bro.itch.io/appextent3"
   },
@@ -18,7 +18,7 @@
     "title": "Mardi Pardi",
     "type": "Global Game Jam \u00b7 Unity",
     "description": "A multiplayer party game about pushing competitors off moving floats. Developed as part of a team during Global Game Jam.",
-    "image": "",
+    "image": "data/mardipardi.png",
     "imageAlt": "Mardi Pardi gameplay",
     "projectUrl": "https://globalgamejam.org/games/2026/mardi-pardi-9"
   },
@@ -33,8 +33,8 @@
     "title": "CHIP-8 SDL",
     "type": "SDL2 \u00b7 C#",
     "description": "An implementation of the CHIP-8 system",
-    "image": "",
-    "imageAlt": "Flight prototype gameplay",
+    "image": "data/chip8logo.png",
+    "imageAlt": "CHIP-8 Logo",
     "sourceUrl": "https://github.com/TurtleBr4/CHIP-8-SDL"
   }
 ]
