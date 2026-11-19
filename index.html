@@ -3,64 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zaid Goodman — game development, programming, and art.">
-  <meta name="theme-color" content="#080b18">
-  <title>Zaid Goodman | Game Development</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Zaid Goodman — game developer.">
+  <meta name="theme-color" content="#17191c">
+  <title>Zaid Goodman</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home"><span class="brand-star">✳</span> TURTLE<span class="brand-dim">.DEV</span></a>
+  <header class="header">
+    <a class="name" href="#top">Zaid Goodman</a>
     <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="#projects">EXPLORE WORK <span>↘</span></a>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-scrim"></div><div class="stars stars-a"></div><div class="stars stars-b"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span class="live-dot"></span> GAME DEVELOPMENT / PROGRAMMING / ART</p>
-        <h1>Zaid<br><span>Goodman</span></h1>
-        <p class="hero-subtitle">I build interactive worlds, gameplay systems, and tools that make ideas playable.</p>
-        <div class="hero-buttons"><a class="button button-bright" href="#projects">VIEW PROJECTS <span>↓</span></a><a class="button button-ghost" href="#about">ABOUT ME <span>↗</span></a></div>
+  <main id="top">
+    <section class="intro">
+      <div class="intro-copy">
+        <h1>Hi, I'm Zaid.</h1>
       </div>
-      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-planet"></div>
-      <div class="hero-caption"><span>ATLANTA, GEORGIA</span><span>INDEPENDENT CREATOR <b>✦</b></span></div>
-      <a class="scroll-cue" href="#about" aria-label="Scroll to About">↓</a>
+      <div class="intro-space" aria-hidden="true"></div>
     </section>
 
-    <section class="section about-section" id="about">
-      <div class="section-kicker"><span>01</span> / ABOUT ME</div>
-      <div class="about-layout">
-        <div class="about-copy">
-          <h2>Curious by nature.<br><span>Developer by design.</span></h2>
-          <p>I'm an Atlanta-based developer specializing in game development. I focus on programming gameplay systems, building tools, and creating interactive experiences. I'm also experienced with general software development with languages like C# and Java and occasionally contribute art to my projects.</p>
-          <div class="skill-chips"><span>UNITY</span><span>C#</span><span>JAVA</span><span>GAMEPLAY SYSTEMS</span><span>TOOLS</span><span>3D & 2D ART</span></div>
-        </div>
-        <div class="portrait-wrap"><div class="portrait-frame"><img src="me_temp_getaprophotoshootpleaseohgod.jpg" alt="Photo of Zaid Goodman" loading="lazy"></div><span class="portrait-stamp">PLAYER 01<br>DEVELOPER</span></div>
+    <section class="work" id="work">
+      <div class="section-top"><h2>Selected Work</h2></div>
+      <div class="projects" id="project-list">
+        <p class="quiet">Loading…</p>
       </div>
     </section>
 
-    <section class="section projects-section" id="projects">
-      <div class="section-kicker"><span>02</span> / SELECTED PROJECTS</div>
-      <div class="section-heading"><h2>Made to be <span>played.</span></h2><p>Games and experiments I've helped bring to life. Choose a project to learn more or launch a browser build when available.</p></div>
-      <div id="project-list" class="project-list" aria-live="polite"><p class="loading-message">Loading projects from the archive…</p></div>
-      <p class="project-edit-note"><span>✳</span> New project? Add one object to <code>projects.json</code>. The cards update automatically.</p>
+    <section class="about" id="about">
+      <h2>About</h2>
+      <p>I'm a game developer based in Atlanta, Georgia, with a background in gameplay programming, game systems, and 3D development.</p>
+      <p class="quiet">Unity · C# · Blender · Godot</p>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-stars"></div>
-      <div class="section-kicker"><span>03</span> / CONTACT</div>
-      <div class="contact-content"><div><p class="eyebrow">LET'S BUILD SOMETHING</p><h2>Have an idea?<br><span>Let's make it real.</span></h2></div><a class="button button-bright" href="mailto:zaidisagoodman@gmail.com">GET IN TOUCH ↗</a></div>
-      <div class="contact-links"><a href="https://github.com/TurtleBr4" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/zaid-goodman-819262222/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://turtle-bro.itch.io/" target="_blank" rel="noopener noreferrer">ITCH.IO ↗</a><span>ZAIDISAGOODMAN@GMAIL.COM</span></div>
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <a href="mailto:zaidgoodman@outlook.com">zaidgoodman@outlook.com</a>
     </section>
   </main>
-  <footer><a class="brand" href="#home"><span class="brand-star">✳</span> TURTLE<span class="brand-dim">.DEV</span></a><span>BUILT WITH CURIOSITY <b>✦</b> <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <footer>
+    <span>© <span id="year"></span> Zaid Goodman</span>
+    <a href="https://github.com/TurtleBr4" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </footer>
   <script src="app.js"></script>
 </body>
 </html>

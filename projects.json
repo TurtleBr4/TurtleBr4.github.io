@@ -1,35 +1,30 @@
 [
   {
-    "id": "robot-game-3",
+    "title": "VaporStrike",
+    "type": "Unity \u00b7 C#",
+    "description": "A platform fighter in development, built around responsive movement, buffered inputs, and reusable combat systems.",
+    "image": "",
+    "imageAlt": "VaporStrike gameplay"
+  },
+  {
     "title": "Robot Game.3",
-    "type": "TOP-DOWN ACTION",
-    "year": "2025",
-    "description": "Move, fight, and explore through ruins in this top-down action game!",
+    "type": "Unity \u00b7 C#",
+    "description": "A top-down 3D game set in a ruined city, where a robot explores and fights hostile machines.",
     "image": "robotgame3.png",
-    "projectUrl": "https://turtle-bro.itch.io/appextent3",
-    "webBuild": false,
-    "tags": ["Unity", "C#", "Action"]
+    "imageAlt": "Robot Game.3 gameplay screenshot"
   },
   {
-    "id": "robo-return",
-    "title": "Robo Return",
-    "type": "THIRD-PERSON ACTION",
-    "year": "2024",
-    "description": "Blast your way through the horde and aim for the highest score in this 3rd person adventure!",
-    "image": "roboreturn.png",
-    "projectUrl": "https://turtle-bro.itch.io/cgdd201423",
-    "webBuild": false,
-    "tags": ["Unity", "Gameplay", "Combat"]
+    "title": "Mardi Pardi",
+    "type": "Global Game Jam \u00b7 Unity",
+    "description": "A multiplayer party game about pushing competitors off moving floats. Developed as part of a team during Global Game Jam.",
+    "image": "",
+    "imageAlt": "Mardi Pardi gameplay"
   },
   {
-    "id": "labyrinth",
-    "title": "Labyrinth",
-    "type": "ADVENTURE / PUZZLE",
-    "year": "2024",
-    "description": "Navigate through the labyrinth, collect the golden eggs, and escape with great riches!",
-    "image": "CropCoverArt.png",
-    "projectUrl": "https://turtle-bro.itch.io/labyr",
-    "webBuild": false,
-    "tags": ["Game Design", "Exploration", "Puzzle"]
+    "title": "Flight Prototype",
+    "type": "Unity \u00b7 C#",
+    "description": "A 3D space-combat prototype focused on piloting, shooting, and avoiding enemy projectiles.",
+    "image": "",
+    "imageAlt": "Flight prototype gameplay"
   }
 ]
