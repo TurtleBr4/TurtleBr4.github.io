@@ -4,7 +4,9 @@
     "type": "Unity \u00b7 C#",
     "description": "A platform fighter in development, built around responsive movement, buffered inputs, and reusable combat systems.",
     "image": "data/vaporstrikeLogo.png",
-    "imageAlt": "VaporStrike gameplay"
+    "imageAlt": "VaporStrike gameplay",
+    "sourceUrl": "https://github.com/TurtleBr4/VaporStrike"
+
   },
   {
     "title": "Robot Game.3",
